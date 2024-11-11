@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Anak</title>
+    <link rel="stylesheet" href="/static/style_daftar.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Daftar Anak</h1>
+    <ul>
+        {% for anak in anak_list %}
+            <li>{{ anak.nama }} | Umur: {{ anak.umur }} bulan | Berat Badan: {{ anak.berat_badan }} kg | jenis_kelamin : {{ anak.jenis_kelamin }} <a href="{{ url_for('rekomendasi', anak_id=anak.id) }}">Rekomendasi</a></li>
+        {% endfor %}
+    </ul>
+    <a href="/">Kembali ke Formulir</a>
+    </div>
+</body>
+<footer>
+    <p>MPASI ADVISORY &copy; 2021</p>
+</footer>
+</html>

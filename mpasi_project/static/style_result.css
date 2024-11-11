@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffdce0; /* Soft pink background */
+    margin: 0;
+    padding: 0;
+    color: #555;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin-top: 60px;
+}
+
+h1 {
+    text-align: center;
+    color: #d27a7a;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+p {
+    color: #e57373;
+    font-size: 18px;
+    text-align: center;
+}
+
+input[type="text"], input[type="date"], input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #f5c2c7;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    background-color: #f8a5b0; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f497a1;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #d27a7a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e57373;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin-top: 30px;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    button, a {
+        font-size: 14px;
+    }
+}

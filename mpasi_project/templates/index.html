@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPASI ADVISORY</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var today = new Date().toISOString().split('T')[0];
+            document.getElementsByName("tanggal_lahir")[0].setAttribute('max', today);
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>MPASI ADVISORY</h1>
+        <form method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" name="nama" id="nama" required>
+            
+            <label for="tanggal_lahir">Tanggal Lahir:</label>
+            <input type="date" name="tanggal_lahir" id="tanggal_lahir" required>
+            
+            <label for="berat_badan">Berat badan (dalam kg):</label>
+            <input type="number" step="0.1" name="berat_badan" id="berat_badan" min="0" required>
+
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <select name="jenis_kelamin" id="jenis_kelamin" required>
+                <option value="L">Laki-laki</option>
+                <option value="P">Perempuan</option>
+                </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <a href="/daftar">Lihat Daftar Anak</a>
+    </div>
+</body>
+
+</html>

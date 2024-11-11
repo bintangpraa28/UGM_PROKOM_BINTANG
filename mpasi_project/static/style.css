@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe6e9, #ffd1dc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    max-width: 450px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(255, 182, 193, 0.4);
+    padding: 30px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.container::before,
+.container::after {
+    content: '';
+    position: absolute;
+    background: radial-gradient(circle, #ffd1dc, #ffe6e9);
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+.container::before {
+    top: -40px;
+    left: -40px;
+}
+.container::after {
+    bottom: -40px;
+    right: -40px;
+}
+h1 {
+    text-align: center;
+    color: #ff6b8b;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-weight: 600;
+    color: #555;
+    margin-top: 10px;
+}
+input[type="text"], input[type="date"], input[type="number"] {
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: #fff7f8;
+    transition: 0.3s ease;
+}
+input[type="text"]:focus, input[type="date"]:focus, input[type="number"]:focus {
+    border-color: #ff6b8b;
+    outline: none;
+    background-color: #ffffff;
+    
+}
+
+select{
+    border-color: #ff6b8b;
+    outline: none;
+    background-color: #ffffff;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: #fff7f8;
+    transition: 0.3s ease;
+}
+
+button {
+    padding: 12px;
+    background-color: #ff6b8b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #ff4a6b;
+}
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ff6b8b;
+    text-decoration: none;
+    font-weight: 500;
+}
+a:hover {
+    text-decoration: underline;
+}
